@@ -1,0 +1,16 @@
+{
+  "name": "agrisage-static-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test tests/*.test.mjs", "build": "node build.mjs"},
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "three": "0.187.0"
+  },
+  "devDependencies": {"esbuild": "0.28.2"}
+}

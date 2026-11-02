@@ -1,0 +1,10 @@
+AgriSAGE static demo third-party notices
+
+The bundled application uses React, React DOM, Three.js, React Three Fiber,
+and React Three Drei. Their license texts, when distributed in the installed
+package, are copied into this directory by the build script. React Three
+Fiber's installed package declares the MIT license in package.json but does
+not include a separate LICENSE file; it is used under the MIT license.
+
+The NanumSquareNeo fonts are distributed under the SIL Open Font License 1.1.
+See Nanum-fonts-OFL-1.1.txt.

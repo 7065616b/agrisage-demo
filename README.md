@@ -1,2 +1,20 @@
-# agrisage-demo
-AgriSAGE browser-only 3D farm simulation demo. Mock AI responses, local records, no real machine control.
+# AgriSAGE 정적 체험판
+
+## 체험 기능
+
+1. 원본 웹의 자체 제작 3D 농기계와 농장 장면, 마스코트 및 나눔 글꼴을 별도 정적 앱에 옮긴다.
+2. 허용 구역 A의 작업, 상태 조회, 복귀만 결정적으로 해석하는 브라우저 내 모의 엔진을 만든다. 실행 전 확인, 멈춤·계속·복귀, 완료와 기록 재생을 구분한다.
+3. 3D/평면 지도, 모바일·키보드·WebGL 대체 화면을 제공하고 체험판의 한계를 화면 전반에 표시한다.
+4. 방어적 단위 시험을 통과한 뒤 상대 경로만 쓰는 `docs/` 배포물을 생성한다.
+
+## 범위
+
+실물 농기계 제어, 인증, 실시간 협업, FactChat, Qwen, 서버와 데이터베이스는 포함하지 않는다. AI 응답은 정해진 문장에 대한 모의 응답이며 작업 기록은 현재 브라우저의 `localStorage`에만 저장된다.
+
+## 실행
+
+Node.js 22 이상에서 `npm install`, `npm test`, `npm run build`를 실행한다. 빌드 결과물 `docs/`를 GitHub Pages 배포 루트로 사용할 수 있다. 이미 설치된 원본 프로젝트의 `node_modules`가 있으면 설치 없이 `npm run build`도 가능하다.
+
+## 출처
+
+3D 트랙터, 농장 장면과 마스코트는 AgriSAGE 원본 프로젝트의 자산을 사용한다. 나눔 글꼴 라이선스는 `public/licenses/Nanum-fonts-OFL-1.1.txt`에, 번들에 포함된 외부 패키지의 라이선스는 `docs/licenses/`에 포함한다. 이 저장소는 체험판 소스와 정적 배포물만 담는다.
